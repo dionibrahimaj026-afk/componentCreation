@@ -1,0 +1,54 @@
+.scrollWrap {
+  overflow-x: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  background-color: var(--color-bg);
+}
+
+.table th,
+.table td {
+  padding: var(--space-4);
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table th {
+  font-weight: var(--font-semibold);
+  color: var(--color-text);
+  background-color: var(--color-neutral-50);
+}
+
+.table tbody tr:hover {
+  background-color: var(--color-neutral-50);
+}
+
+.table.striped tbody tr:nth-child(even) {
+  background-color: var(--color-neutral-50);
+}
+
+.table.striped tbody tr:nth-child(even):hover {
+  background-color: var(--color-neutral-100);
+}
+
+.table.compact th,
+.table.compact td {
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+}
+
+.table.stickyHeader thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.table.stickyHeader th {
+  box-shadow: 0 1px 0 var(--color-border);
+}
