@@ -46,3 +46,19 @@
 .code {
   white-space: pre;
 }
+
+:global([data-theme="dark"]) .pre {
+  background-color: #f4f4f5;
+  color: #18181b;
+}
+
+:global([data-theme="dark"]) .copyBtn {
+  color: #18181b;
+  background-color: #e4e4e7;
+  border-color: #d4d4d8;
+}
+
+:global([data-theme="dark"]) .copyBtn:hover {
+  background-color: #d4d4d8;
+  color: #18181b;
+}
